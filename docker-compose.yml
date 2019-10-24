@@ -1,0 +1,10 @@
+version: '3.7'
+services:
+  netdata-master:
+    build:
+      context: ./netdata-master/
+    ports: 
+      - 17777:19999
+  netdata-node:
+    build:
+      context: ./netdata-node/
